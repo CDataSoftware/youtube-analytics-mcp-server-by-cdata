@@ -1,9 +1,9 @@
 # youtube-analytics-mcp-server-by-cdata
 CData's Model Context Protocol (MCP) Server for YouTube Analytics
 
-:heavy_exclamation_mark: This project builds a read-only MCP server. For full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for YouTube Analytics (beta)](https://www.cdata.com/download/download.aspx?sku=BYZM-V&type=beta). 
+:heavy_exclamation_mark: This project builds a local, read-only MCP server. For fully remote MCP access, check out the first managed MCP platform: [CData Connect AI](https://www.cdata.com/ai/). For locally hosted, full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for YouTube Analytics](https://www.cdata.com/drivers/youtubeanalytics/download/mcp/).
 ## Purpose
-We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data YouTube Analytics supported by the [CData JDBC Driver for YouTube Analytics](https://www.cdata.com/drivers/youtubeanalytics/jdbc).
+We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data YouTube Analytics supported by the [CData JDBC Driver for YouTube Analytics](https://www.cdata.com/drivers/youtubeanalytics/jdbc/).
 
 CData JDBC Driver connects to YouTube Analytics by exposing them as relational SQL models.
 
@@ -20,7 +20,7 @@ This server wraps that driver and makes YouTube Analytics data available through
       mvn clean install
       ``` 
       This creates the JAR file: CDataMCP-jar-with-dependencies.jar
-2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/youtubeanalytics/download/jdbc](https://www.cdata.com/drivers/youtubeanalytics/download/jdbc)
+2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/youtubeanalytics/download/jdbc](https://www.cdata.com/drivers/youtubeanalytics/download/jdbc/)
 3. License the CData JDBC Driver:
     * Navigate to the `lib` folder in the installation directory, typically:
         * (Windows) `C:\Program Files\CData\CData JDBC Driver for YouTube Analytics\`
